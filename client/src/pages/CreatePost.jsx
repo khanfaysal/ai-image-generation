@@ -20,10 +20,14 @@ const CreatePost = () => {
   const handleSubmit = () => {
   }
   const handleChange = (e) => {
-    e.preventdefault()
+    // e.preventdefault();
+    setForm({...form, [e.target.name]: e.target.value})
   }
   const handleSurpriseMe = (e) => {
-    e.preventdefault()
+    // e.preventdefault()
+    const randomPrompt = getRandomPrompt(form.prompt);
+    setForm({...form, prompt: randomPrompt})
+
   }
   return (
     <section className='max-w-7xl mx-auto'>
