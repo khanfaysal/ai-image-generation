@@ -79,7 +79,7 @@ const CreatePost = () => {
 
   return (
     <section className="max-w-7xl mx-auto">
-      <div className='flex flex-col justify-center items-center text-center mt-5'>
+      <div className='sm:text-xs md:flex flex-col justify-center items-center text-center mt-24'>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Generate Your Imagination</h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Generate an imaginative image through ai model and share with community</p>
       </div>

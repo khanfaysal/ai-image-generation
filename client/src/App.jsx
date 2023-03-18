@@ -6,7 +6,7 @@ import { logo } from './assets'
 const App = () => {
   return (
     <BrowserRouter>
-      <header className='w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]'>
+      <header className='sm:flex flex-col gap-4 md:w-full flex md:flex-row justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4] fixed top-0 left-0 right-0 z-10'>
         <Link to='/'>
           <img src={logo} alt="logo" className='w-28 object-contain' />
         </Link>

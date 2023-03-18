@@ -58,7 +58,7 @@ const Home = () => {
 	}
 
 	return (
-		<section className='max-w-7xl mx-auto'>
+		<section className='max-w-7xl mx-auto z-0'>
 			<div className=''>
 				<h1 className='font-extrabold text-[#222328] text-[32px]'>
 					Showcase Images
