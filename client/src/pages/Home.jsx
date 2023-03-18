@@ -61,7 +61,7 @@ const Home = () => {
 		<section className='max-w-7xl mx-auto'>
 			<div className=''>
 				<h1 className='font-extrabold text-[#222328] text-[32px]'>
-					The Community showcase
+					Generate Image and Showcase
 				</h1>
 				<p className='mt-2 text-[#666e75] text-[16px] max-w-[500px]'>
 					Browse through a collection of imagination and visually stunning
