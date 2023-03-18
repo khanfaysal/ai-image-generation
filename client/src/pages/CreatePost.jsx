@@ -29,7 +29,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/dalle', {
+        const response = await fetch('https://ai-image-generation-3zrf.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8080/api/v1/post', {
+        const response = await fetch('https://ai-image-generation-3zrf.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -66,7 +66,6 @@ const CreatePost = () => {
         });
 
         await response.json();
-        alert('Success');
         navigate('/');
       } catch (err) {
         alert(err);
@@ -144,7 +143,7 @@ const CreatePost = () => {
           <p className="mt-2 text-[#666e75] text-[14px]">## Generate image and share with community</p>
           <button
             type="submit"
-            className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="mt-3 text-white bg-[#032074] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {loading ? 'Sharing...' : 'Share with the Community'}
           </button>

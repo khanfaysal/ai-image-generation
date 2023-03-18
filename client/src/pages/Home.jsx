@@ -6,7 +6,7 @@ const RenderCards = ({ data, title }) => {
 		return data.map((post) => <Card key={post._id} {...post} />);
 	}
 	return (
-		<h2 className='mt-5 font-bold text-[#6469ff] text-xl uppercase'>{title}</h2>
+		<h2 className='mt-5 font-bold text-[#032074] text-xl uppercase'>{title}</h2>
 	)
 };
 
@@ -22,7 +22,7 @@ const Home = () => {
 		setLoading(true);
 
 		try {
-			const response = await fetch('http://localhost:8080/api/v1/post', {
+			const response = await fetch('https://ai-image-generation-3zrf.onrender.com/api/v1/post', {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ const Home = () => {
 		<section className='max-w-7xl mx-auto'>
 			<div className=''>
 				<h1 className='font-extrabold text-[#222328] text-[32px]'>
-					Generate Image and Showcase
+					Showcase Images
 				</h1>
 				<p className='mt-2 text-[#666e75] text-[16px] max-w-[500px]'>
 					Browse through a collection of imagination and visually stunning
@@ -69,7 +69,7 @@ const Home = () => {
 				</p>
 			</div>
 			<div className='mt-16'>
-				<FormField labelName='Search posts' type='text' name='text' placeholder='Search posts' value={searchText} handleChange={handleSearchChange} />
+				<FormField labelName='Search posts or images' type='text' name='text' placeholder='Search images' value={searchText} handleChange={handleSearchChange} />
 			</div>
 			<div className='mt-10'>
 				{loading ? (
@@ -78,7 +78,7 @@ const Home = () => {
 					</div>
 				) : (
 					<h2 className='font-medium text-[#666e75] text-xl mb-3'>
-						Showing results for{" "}
+						Showing results...{" "}
 						<span className='text-[#222328]'>{searchText}</span>
 					</h2>
 				)}
