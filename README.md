@@ -11,5 +11,5 @@ Project Summary : 1. Reactjs application
                   7. Express js for backend
                   
                   
-Live link : https://6415c2f597a24a5d1aec13a9--courageous-arithmetic-fb1f4f.netlify.app/                  
+Live link : https://courageous-arithmetic-fb1f4f.netlify.app/                  
 Video link : https://drive.google.com/file/d/16dj4bOKOnl5YOZiOWdr5AtnxMmIDn3hx/view?usp=sharing
