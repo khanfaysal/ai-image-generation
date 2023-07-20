@@ -16,7 +16,7 @@ const App = () => {
             Generate Image
           </Link>
           <Link to='/' className='text-white font-inter font-medium bg-[#032074] px-4 py-2 rounded-md'>
-            Go Community
+            Showcase
           </Link>
         </div>
       </header>
